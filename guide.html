@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-/W3C/DTD Xhtml 1.0 Transitional/EN" "http:/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:/www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>GUIDE | 전문가정보 데이터베이스 | 국회도서관</title>
+        <style type="text/css">
+            html, body {margin:0;padding:0}
+            body, td {font:.9em "맑은 고딕",dotum,"돋움",Sans-Serif;color:#6b6b6b}
+            td{font-size:11px}
+            table {border-collapse: collapse;border-spacing: 0}
+			ul {list-style: none}
+            input[type="checkbox"]{margin:0 3px 0;vertical-align:text-bottom}
+            #g_header h1 {min-width:1024px;height:60px;line-height:60px;padding-left:28px;margin-top:0;color:#fff;background:#112e51}
+            #g_body {min-width:1024px;padding:0 30px 50px}
+            #g_footer {padding:30px; text-align:right}
+            .guide_table {width:100%;border-collapse:collapse}
+            .guide_table thead th {background:#f1f1f1;padding:3px;border:solid 1px #dadada}
+            .guide_table tbody td {padding:4px 10px;border:solid 1px #dadada}
+            .guide_table tbody td.filelink .link {text-decoration:none;color:#0177bd}
+            .guide_table tbody td.filelink .link:hover {text-decoration: underline}
+            .guide_table tbody td.filelink .link:focus {font-weight: 600;color: #e43c3c;text-decoration: underline}
+            .guide_table tbody tr td:first-child{text-align:center}
+			.guide_table tbody tr:hover{background-color:#f1f1f1}
+            .guide_table tr.dep01 td {border-top:solid 2px #dadada}
+            .mark {display:inline-block;padding:0 2px;color:#fff}
+            .mark-a {background-color: blue}
+            .mark-b {background-color: #8200ff}
+            .mark-c {background-color: red}
+            .mark-d {background-color: green}
+            .mark-e {background-color: #07c7bc}
+            .mark-f {background-color: #40de40}
+            .mark-g {background-color: #444}
+            .mark-h {background-color: #23a15e}
+            .mark-i {background-color: #0177bd}
+            .mark-remaning-work {background-color: red}
+			.tab-btn{margin-bottom:25px}
+			.tab-btn:after {content: ''; display: block; clear: both}
+			.tab-btn ul{margin:0 0 -1px 0;padding:0}
+			.tab-btn li{float:left;width:170px;border:1px solid #b1b1b1;margin-right:-1px}
+			.tab-btn a{display:block;height:45px;line-height:45px;text-decoration:none;font-size:16px;color:#666;text-align:center}
+			.tab-btn .on,.tab-btn a:hover{background-color:#ddd;color:#222}
+			.tac{text-align:center}
+        </style>
+    </head>
+    <body>
+        <div id="g_header">
+            <h1>국회도서관 | 전문가정보 데이터베이스</h1>
+        </div>
+        <div id="g_body">
+            <div class="contents">
+                <h3 style="font-size:36px; font-weight:bold;">File List</h3>
+				<!-- <div class="tab-btn">
+					<ul>
+						<li><a href="www/layout.jsp">Layout</a></li>
+						<li><a href="www/style.jsp" target="_blank">Style</a></li>
+						<li><a href="guide.html" class="on">국문</a></li>
+						<li><a href="eng_guide.html">영문</a></li>
+					</ul>
+				</div> -->
+                <form name="work" action="">
+                    <table class="guide_table" id="guide_table">
+                        <colgroup>
+                            <col width="30px" />
+                            <col width="*" />
+                            <col width="*" />
+                            <col width="*" />
+                            <col width="*" />
+                            <col width="*" />
+                            <col width="150px" />
+                            <col width="100px" />
+                            <col width="155px" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">NO</th>
+                                <th scope="col">1depth</th>
+                                <th scope="col">2depth</th>
+                                <th scope="col">3depth</th>
+                                <th scope="col">4depth</th>
+                                <th scope="col">5depth</th>
+                                <th scope="col">link</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>메인</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/index.jsp" target="_blank" title="새창" class="link">index.jsp</a></td>>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>개인정보처리방침</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="#n" target="_blank" title="새창" class="link"></a></td>
+								<td class="tac"></td>
+                                <td>외부링크</td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>이메일무단수집 거부</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="#n" target="_blank" title="새창" class="link"></a></td>
+								<td class="tac"></td>
+                                <td>외부링크</td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>전문가보기</td>
+                                <td>전문가 찾기</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/expert/expert_list.jsp" target="_blank" title="새창" class="link">expert_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>검색결과 인쇄 팝업</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/expert/pop_expert_search.jsp" target="_blank" title="새창" class="link">pop_expert_search.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/expert/expert_view.jsp" target="_blank" title="새창" class="link">expert_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>전문가 찾기 상세결과 팝업</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/expert/pop_expert_view.jsp" target="_blank" title="새창" class="link">pop_expert_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>이달의 전문가</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/expert/expert_month.jsp" target="_blank" title="새창" class="link">expert_month.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>국회의원 보기</td>
+                                <td>국회의원 찾기</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/assembly/assembly01_list.jsp" target="_blank" title="새창" class="link">assembly01_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/assembly/assembly01_view.jsp" target="_blank" title="새창" class="link">assembly01_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>상임위원회</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/assembly/assembly02_list.jsp" target="_blank" title="새창" class="link">assembly02_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>공청회∙세미나 일정</td>
+                                <td>오늘의 일정</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/assembly/assembly03_today.jsp" target="_blank" title="새창" class="link">assembly03_today.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>목록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/assembly/assembly03_list.jsp" target="_blank" title="새창" class="link">assembly03_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/assembly/assembly03_view.jsp" target="_blank" title="새창" class="link">assembly03_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>소식나눔</td>
+                                <td>전문가 신간</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news01_list.jsp" target="_blank" title="새창" class="link">news01_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news01_view.jsp" target="_blank" title="새창" class="link">news01_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>등록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news01_write.jsp" target="_blank" title="새창" class="link">news01_write.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>전문가 채널</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news02_list.jsp" target="_blank" title="새창" class="link">news02_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>전문가 동정</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news03_list.jsp" target="_blank" title="새창" class="link">news03_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news03_view.jsp" target="_blank" title="새창" class="link">news03_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>등록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news03_write.jsp" target="_blank" title="새창" class="link">news03_write.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>공지사항</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news04_list.jsp" target="_blank" title="새창" class="link">news04_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/news/news04_view.jsp" target="_blank" title="새창" class="link">news04_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>소개</td>
+                                <td>전문가정보 DB는</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/introduce/introduce01.jsp" target="_blank" title="새창" class="link">introduce01.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>걸어온 길</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/introduce/introduce02.jsp" target="_blank" title="새창" class="link">introduce02.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>함께하는 전문가는</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/introduce/introduce03.jsp" target="_blank" title="새창" class="link">introduce03.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>내가찾은전문가</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="#n" target="_blank" title="새창" class="link"></a></td>
+								<td class="tac"></td>
+								<!-- <td class="tac"><strong style="color:#e43c3c">완료</strong></td> -->
+                                <td>전문가 찾기 바로가기</td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td>내정보</td>
+                                <td>내정보</td>
+                                <td>내정보</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0101.jsp" target="_blank" title="새창" class="link">mypage0101.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>기본정보</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0102.jsp" target="_blank" title="새창" class="link">mypage0102.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>연구 분야</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0103.jsp" target="_blank" title="새창" class="link">mypage0103.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>학력/경력</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0104.jsp" target="_blank" title="새창" class="link">mypage0104.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>활동 내역</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0105.jsp" target="_blank" title="새창" class="link">mypage0105.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>ID/PW 변경</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0106.jsp" target="_blank" title="새창" class="link">mypage0106.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>개인정보보호</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0107.jsp" target="_blank" title="새창" class="link">mypage0107.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>메세지</td>
+                                <td>받은 메시지</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0201_list.jsp" target="_blank" title="새창" class="link">mypage0201_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0201_view.jsp" target="_blank" title="새창" class="link">mypage0201_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>보낸 메시지</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0202_list.jsp" target="_blank" title="새창" class="link">mypage0202_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0202_view.jsp" target="_blank" title="새창" class="link">mypage0202_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>메시지 보관함</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0203_list.jsp" target="_blank" title="새창" class="link">mypage0203_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>문의내역</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage03_list.jsp" target="_blank" title="새창" class="link">mypage03_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>상세</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage03_view.jsp" target="_blank" title="새창" class="link">mypage03_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>내 게시글 관리</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage04_list.jsp" target="_blank" title="새창" class="link">mypage04_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>대화하기</td>
+                                <td>맺은 지인</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0501.jsp" target="_blank" title="새창" class="link">mypage0501.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>받은 지인</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0502.jsp" target="_blank" title="새창" class="link">mypage0502.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>그룹 관리</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0503_list.jsp" target="_blank" title="새창" class="link">mypage0503_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>그룹추가</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0503_add.jsp" target="_blank" title="새창" class="link">mypage0503_add.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>대화방 관리</td>
+                                <td>목록</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0504_list.jsp" target="_blank" title="새창" class="link">mypage0504_list.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>대화방</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/mypage0504_view.jsp" target="_blank" title="새창" class="link">mypage0504_view.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>인쇄미리보기</td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/mypage/pop_chatting_print.jsp" target="_blank" title="새창" class="link">pop_chatting_print.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>전문가 등록</td>
+                                <td>전문가 등록안내</td>
+                                <td>안내</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/helpjoin.jsp" target="_blank" title="새창" class="link">helpjoin.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td>전문가정보 데이터베이스 등록안내</td>
+                                <td>정보 수집 및 공개 동의</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/regist/regist01.jsp" target="_blank" title="새창" class="link">regist01.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>ISNI 등록 안내</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/regist/pop_regist.jsp" target="_blank" title="새창" class="link">pop_regist.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>로그인</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/regist/regist02.jsp" target="_blank" title="새창" class="link">regist02.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>지원서 작성</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/regist/regist03.jsp" target="_blank" title="새창" class="link">regist03.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>등록 완료</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/regist/regist04_1.jsp" target="_blank" title="새창" class="link">regist04_1.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>기등록 안내</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/regist/regist04_2.jsp" target="_blank" title="새창" class="link">regist04_2.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr class="dep01">
+                                <td class="no"></td>
+                                <td></td>
+                                <td></td>
+                                <td>오류 안내</td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/regist/regist04_3.jsp" target="_blank" title="새창" class="link">regist04_3.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+							<tr class="dep01">
+                                <td class="no"></td>
+                                <td>통합검색</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="filelink"><a href="/human/www/totalsearch/totalsearch.jsp" target="_blank" title="새창" class="link">totalsearch.jsp</a></td>
+								<td class="tac"><strong style="color:#e43c3c">완료</strong></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <script>
+            //테이블 번호 삽입
+            (function () {
+                let num = 1,
+                    tr = document.querySelectorAll('table tr');
+
+                for(let i=1; i < tr.length; i++) {
+                    tr[i].children[0].innerText = num;
+                    num++;
+                }
+            })();
+
+            // document.write('<div>');
+            // document.write(cwmaMenu[0].menu[0].name, '<br>');
+            // document.write(cwmaMenu[1].menu[0].name);
+            // document.write('</div>');
+
+            // console.dir(cwmaMenu[0].menu);
+        </script>
+    </body>
+</html>
